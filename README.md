@@ -17,15 +17,9 @@ Python 3.8 or higher
 
 pip (Python Package Installer)
 
-Installation
-Clone the repository:
 
-Bash
-
-cd project-PRODIGY_CS_04
+project-PRODIGY_CS_04
 Set up a virtual environment (Recommended):
-
-Bash
 
 python -m venv venv
 # Windows
@@ -34,7 +28,6 @@ venv\Scripts\activate
 source venv/bin/activate
 Install dependencies: This project uses a requirements.txt file to manage dependencies cleanly.
 
-Bash
 
 pip install -r requirements.txt
 Configuration
