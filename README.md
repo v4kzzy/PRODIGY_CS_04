@@ -4,7 +4,8 @@ A Python-based automation tool designed to [briefly describe the legitimate purp
 Description
 This project provides a lightweight solution for [elaborate on the problem it solves]. It utilizes standard Python libraries to interact with system APIs in a controlled and transparent manner.
 
-Key Features:
+USAGE
+•Create an account on "https://mailtrap.io/" using a temp mail.
 
 Modular Design: Functions are separated for easier maintenance.
 
