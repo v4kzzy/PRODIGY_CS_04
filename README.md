@@ -1,61 +1,28 @@
-[Simple Keylogger]
-A Python-based automation tool designed to [briefly describe the legitimate purpose, e.g., "monitor system resource usage," "automate daily file backups," or "capture diagnostic screenshots for debugging"].
+# 🕵️ Advanced Python Keylogger & System Monitor
 
-Description
-This project provides a lightweight solution for [elaborate on the problem it solves]. It utilizes standard Python libraries to interact with system APIs in a controlled and transparent manner.
+> **A comprehensive system monitoring tool that captures keystrokes, mouse activity, audio, screenshots, and system metadata.**
 
-USAGE
-•Create an account on "https://mailtrap.io/" using a temp mail.
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![Status](https://img.shields.io/badge/Status-Educational-orange?style=for-the-badge)
 
-Modular Design: Functions are separated for easier maintenance.
+## 📄 Overview
 
-Configurable Reporting: Users can define how often the tool runs or reports status.
+This project is a multi-functional surveillance tool developed in Python. Unlike standard keyloggers that only capture text, this tool acts as a full system monitor. It is designed to capture a wide array of user interactions and environment data, automatically reporting them via email at set intervals.
 
-Secure Configuration: Sensitive credentials are managed via environment variables, not hardcoded in the source.
+**⚠️ Ethical Disclaimer:** This software is for **educational purposes and authorized security testing only**. Using this tool to monitor devices without the owner's explicit consent is a violation of privacy laws. The developer assumes no liability for misuse.
 
-Prerequisites
-Python 3.8 or higher
+## ✨ Key Features
 
-pip (Python Package Installer)
+* **⌨️ Key Logging:** Captures all keystrokes, including special characters (Space, Esc, etc.).
+* **🖱️ Mouse Tracking:** Logs mouse movements, clicks, and scrolling behavior.
+* **🎤 Audio Surveillance:** Records microphone input (saved as `.wav`) to capture ambient sound.
+* **📸 Visual Surveillance:** Takes periodic screenshots of the user's desktop.
+* **💻 System Fingerprinting:** Collects internal IP, processor type, OS version, and machine architecture.
+* **📧 Auto-Reporting:** Sends collected logs and media files via SMTP (Email) at defined intervals.
+* **🧹 Self-Destruct:** Includes logic to attempt self-deletion after execution (OS dependent).
 
+## 🛠️ Dependencies
 
-project-PRODIGY_CS_04
-Set up a virtual environment (Recommended):
+This project relies on several powerful Python libraries:
 
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-Install dependencies: This project uses a requirements.txt file to manage dependencies cleanly.
-
-
-pip install -r requirements.txt
-Configuration
-Security Note: Never commit passwords or API keys to version control. This project uses environment variables for configuration.
-
-
-Update the variables in .env:
-
-
-REPORT_INTERVAL=60
-SMTP_SERVER=smtp.example.com
-SMTP_PORT=587
-SMTP_USER=your_email@example.com
-SMTP_PASS=your_secure_password
-Usage
-
-Project Structure
-main.py: The entry point of the application.
-
-utils/: specific utility functions (e.g., logging, data formatting).
-
-requirements.txt: List of external Python libraries required.
-
-.env: Configuration file for sensitive data (excluded from Git).
-
-Disclaimer
-This software is provided for educational and administrative purposes only. The user assumes all responsibility for ensuring that the use of this software adheres to local laws and regulations regarding data privacy and monitoring.
-
-python main.py
-To stop the execution, press Ctrl + C in the terminal window.
+* `pynput` (Input
