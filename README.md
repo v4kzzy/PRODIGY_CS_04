@@ -37,7 +37,6 @@ Security Note: Never commit passwords or API keys to version control. This proje
 
 Update the variables in .env:
 
-Ini, TOML
 
 REPORT_INTERVAL=60
 SMTP_SERVER=smtp.example.com
